@@ -101,8 +101,14 @@ detalied = `<div class="container text-white">
 
   document.querySelector(".details").innerHTML = detalied
   $(".details").fadeIn(200)
+  $("#games").fadeOut(100)
+  $("#navbar").fadeOut(100)
+  $("#header").fadeOut(100)
   $(".fa-xmark").click(()=>{
     $(".details").fadeOut(200)
+    $("#games").fadeIn(200)
+    $("#navbar").fadeIn(100)
+    $("#header").fadeIn(100)
   })
   
 }
